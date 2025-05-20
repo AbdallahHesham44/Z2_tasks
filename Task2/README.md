@@ -3,8 +3,7 @@
 This Jupyter Notebook (`dawonloadPDFs.ipynb`) automates the process of:
 
 - Scraping the [Bourns Obsolete Data Sheets](https://bourns.com/resources/obsolete-data-sheets) webpage for PDF datasheet links.
-- Downloading all datasheets, or specifically the "PTE Series" datasheet, to a local folder (`bourns_datasheets`).
-- Optionally downloading the PFAS Declaration PDF.
+- Downloading all datasheets, or specifically the "PTE Series" datasheet, to a local folder (`bourns_datasheets`).   
 - Searching downloaded PDF files for specific keywords using `PyPDF2`.
 
 ## Usage
