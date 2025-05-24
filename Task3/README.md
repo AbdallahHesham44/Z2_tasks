@@ -18,3 +18,11 @@ This tool:
 1. Install requirements:
    ```bash
    pip install selenium beautifulsoup4
+   ```
+## 📋 Validation Output Example
+
+### Raw Specs String
+```text
+----------------------------------------
+Specs String: Ceramic Capacitor: Yes, Multilayer: Yes, 50V: Yes, 10% +Tol: Yes...
+----------------------------------------
