@@ -1,28 +1,33 @@
 # Capacitor Specification Validator
 
-A web scraping solution that validates electronic capacitor specifications against industry standards using Selenium and BeautifulSoup.
+## 📝 Description
+A Python script that scrapes and validates capacitor specifications from electronic component websites using Selenium and BeautifulSoup.
 
-## 🔍 Overview
-This tool:
-1. Scrapes capacitor data from [FindChips.com](https://www.findchips.com)
-2. Validates key specifications against expected values
-3. Returns a clear validation report with ✅/❌ indicators
+## 🛠️ Technologies Used
+```python
+from selenium import webdriver            # Web automation
+from selenium.webdriver.chrome.service import Service  # ChromeDriver service
+from selenium.webdriver.chrome.options import Options  # Browser options
+from bs4 import BeautifulSoup            # HTML parsing
+import time                              # Delays
+import re                                # Regular expressions
+```
+## 🚀 Features
+Web scraping of capacitor specifications
 
-## 🛠️ Technical Stack
-- **Python 3.x**
-- **Selenium** (Headless Chrome for scraping)
-- **BeautifulSoup** (HTML parsing)
-- **Regex** (Pattern validation)
+Automatic validation against industry standards
 
-## ⚙️ Installation
-1. Install requirements:
-   ```bash
-   pip install selenium beautifulsoup4
-   ```
-## 📋 Validation Output Example
+Clear pass/fail reporting with visual indicators (✅/❌)
 
-### Raw Specs String
-```text
-----------------------------------------
-Specs String: Ceramic Capacitor: Yes, Multilayer: Yes, 50V: Yes, 10% +Tol: Yes...
-----------------------------------------
+| Specification  | Validation Pattern               | Example         |
+|---------------|----------------------------------|-----------------|
+| **Type**      | Exact match to expected types    | `Ceramic Capacitor` → ✅ |
+| **Voltage**   | `^\d+V$` regex                   | `50V` → ✅       |
+| **Tolerance** | `^\d+% [±]Tol$` regex            | `10% +Tol` → ✅  |
+| **Dielectric**| Match to expected dielectrics    | `X7R` → ✅       |
+| **Capacitance**| `^\d*\.?\d+(uF\|nF\|pF)$` regex | `10uF` → ✅      |
+| **Size**      | 4-digit size code                | `0603` → ✅      |
+
+
+
+
