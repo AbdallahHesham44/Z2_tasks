@@ -1,4 +1,4 @@
-# z2 Data Analysis Repository
+# Z2 Data Analysis Repository
 
 📊 **Repository for data analysis tasks at z2 Data**  
 *Last updated: [DATE]*
