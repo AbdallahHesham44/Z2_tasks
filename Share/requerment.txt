@@ -1,0 +1,18 @@
+  Required Installations:
+1. Python Environment
+
+Python 3.11 (or latest stable 3.x version)
+
+pip (Python package installer)
+
+2. Code Editor
+
+Visual Studio Code (latest stable version)
+
+4. Google Chrome (version 137.0.7151.119)
+
+5. ChromeDriver (matching the exact Chrome version installed)
+If possible, please install ChromeDriver 137.0.7151.119 to match Chrome v137.0.7151.119.
+
+Alternatively, since we’ll use webdriver-manager in Python, ensuring Chrome is up to date and accessible is enough, 
+as webdriver-manager can download and manage the appropriate driver automatically.
